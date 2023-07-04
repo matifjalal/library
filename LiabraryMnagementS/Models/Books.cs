@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using NuGet.Protocol.Core.Types;
+using System.ComponentModel.DataAnnotations;
 
 namespace LiabraryMnagementS.Models
 {
@@ -11,5 +12,6 @@ namespace LiabraryMnagementS.Models
         public string Autor { get; set; }
         public int BooksCatagoryId{ get; set; }
         public BooksCatagory? BooksCatagory { get; set; }
+        public float Cost { get; set; }
     }
 }
