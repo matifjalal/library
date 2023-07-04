@@ -47,7 +47,7 @@ namespace LiabraryMnagementS.Controllers
         // GET: Books/Create
         public IActionResult Create()
         {
-            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Id");
+            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Name");
             return View();
         }
 
@@ -64,7 +64,7 @@ namespace LiabraryMnagementS.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Id", books.BooksCatagoryId);
+            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Name", books.BooksCatagoryId);
             return View(books);
         }
 
@@ -81,7 +81,7 @@ namespace LiabraryMnagementS.Controllers
             {
                 return NotFound();
             }
-            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Id", books.BooksCatagoryId);
+            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Name", books.BooksCatagoryId);
             return View(books);
         }
 
@@ -117,7 +117,7 @@ namespace LiabraryMnagementS.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Id", books.BooksCatagoryId);
+            ViewData["BooksCatagoryId"] = new SelectList(_context.booksCatagories, "Id", "Name", books.BooksCatagoryId);
             return View(books);
         }
 
