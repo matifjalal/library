@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.EntityFrameworkCore;
+using LiabraryMnagementS.Models;
 
 namespace LiabraryMnagementS.Models
 {
@@ -13,6 +14,8 @@ namespace LiabraryMnagementS.Models
         public DbSet<BooksCatagory> booksCatagories { get; set; }
 
         public DbSet<Books> books { get; set; }
+
+        public DbSet<LiabraryMnagementS.Models.UserInfo>? UserInfo { get; set; }
 
         
     }
