@@ -1,4 +1,5 @@
 ﻿namespace LiabraryMnagementS.Models
+using System.ComponentModel.DataAnnotations;
 {
     public class CustomerReservation
     {
