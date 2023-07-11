@@ -15,8 +15,11 @@ namespace LiabraryMnagementS.Models
 
         public DbSet<Books> books { get; set; }
 
-        public DbSet<LiabraryMnagementS.Models.UserInfo>? UserInfo { get; set; }
+        public DbSet<LiabraryMnagementS.Models.Customer>? customers { get; set; }
 
-        
+        public DbSet<BookPurchase> bookPurchases { get; set; }
+
+        public DbSet<CustomerReservation> customerReservations { get; set; }
+
     }
 }
