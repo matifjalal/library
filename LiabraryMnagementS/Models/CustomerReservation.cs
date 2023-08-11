@@ -1,6 +1,7 @@
-﻿namespace LiabraryMnagementS.Models
-using System.ComponentModel.DataAnnotations;
-{
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LiabraryMnagementS.Models
+{ 
     public class CustomerReservation
     {
         [key]
