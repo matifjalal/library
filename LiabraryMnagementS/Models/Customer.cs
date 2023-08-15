@@ -10,17 +10,15 @@ namespace LiabraryMnagementS.Models
 
         public string Name { get; set; }
 
+        public string FName { get; set; }
+
+        public string Education  { get; set; }
+
         public string Addrass { get; set; }
 
         public int PhonNo { get; set; }
 
-        public int WhatsappNo { get; set; }
+        public int IdNumber { get; set; }
 
-        public string BookName { get; set; }
-
-        public float Cost { get; set; }
-
-        public  float SalsePrice { get; set; }
-        public DateTime CreateDateTime { get; set; } = DateTime.Now;
     }
 }

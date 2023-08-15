@@ -2,7 +2,7 @@
 
 namespace LiabraryMnagementS.Models
 { 
-    public class CustomerReservation
+    public class BookReservation
     {
         [key]
         public int Id { get; set; }
