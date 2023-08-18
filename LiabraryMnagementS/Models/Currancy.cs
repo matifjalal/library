@@ -4,7 +4,7 @@
     {
         public int Id { get; set; }
         public string  Name { get; set; }
-        public string abbriviation { get; set; }
+        public string Abbreviations { get; set; }
 
 
     }

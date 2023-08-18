@@ -16,9 +16,9 @@ namespace LiabraryMnagementS.Models
 
         public string Addrass { get; set; }
 
-        public int PhonNo { get; set; }
+        public string PhonNo { get; set; }
 
-        public int IdNumber { get; set; }
+        public string IdNumber { get; set; }
 
     }
 }

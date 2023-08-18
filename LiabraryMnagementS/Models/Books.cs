@@ -8,21 +8,23 @@ namespace LiabraryMnagementS.Models
     {
         [Key]
         public int Id { get; set; }
-        public string BookId { get; set; }
-        public DateTime CreateDateTime { get; set; } = DateTime.Now;
+        public int BookId { get; set; }
+        public Books? BooksId { get; set; }
+        public DateTime StartDate { get; set; }
 
-        public int StartDate { get; set; }
-
-        public int EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         public float  Cost { get; set; }
 
-        public string? Autor { get; set; }
+        public int? AutorId { get; set; }
+        public Author? AuthorId { get; set; }
         public int BooksCatagoryId { get; set; }
         public BooksCatagory? BooksCatagory { get; set; }
-        public float CustomerId { get; set; }
+        public int CustomerId { get; set; }
+        public Customer? CustomersId { get; set; }
 
         public int VenderId { get; set; }
+        public Vender? VendersId { get; set; }
 
         public float  CurrencyId { get; set; }
 
