@@ -7,7 +7,8 @@ namespace LiabraryMnagementS.Models
         [key]
         public int Id { get; set; }
   
-        public int BookId { get; set; } 
+        public int BookId { get; set; }
+        public Book? Book { get; set; }
 
         public DateTime StartDate { get; set; }
 
@@ -15,9 +16,10 @@ namespace LiabraryMnagementS.Models
         public float Cost { get; set; }
 
         public int CustomerId { get; set; }
+        public Customer? Customer { get; set; }
 
         public int VenderId { get; set; }
-
+        public Vender? Vender { get; set; }
 
 
     }

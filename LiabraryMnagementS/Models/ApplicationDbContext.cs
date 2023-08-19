@@ -17,15 +17,15 @@ namespace LiabraryMnagementS.Models
 
         public DbSet<LiabraryMnagementS.Models.Customer>? customers { get; set; }
 
-        public DbSet<BookSales> booksales { get; set; }
+        public DbSet<BookSale> ‌‌Booksales { get; set; }
 
-        public DbSet<BookReservation> bookreservations { get; set; }
+        public DbSet<BookReservation> Bookreservations { get; set; }
 
-        public DbSet <Author> authors { get; set; }
+        public DbSet <Author> Authors { get; set; }
 
-        public DbSet <Currancy> currancies { get; set; }
+        public DbSet <Currancy> Currancies { get; set; }
 
-        public DbSet <Vender> venders { get; set; }
+        public DbSet <Vender> Venders { get; set; }
 
     }
 }

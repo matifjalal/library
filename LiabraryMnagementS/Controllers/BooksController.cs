@@ -56,7 +56,7 @@ namespace LiabraryMnagementS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Autor,BooksCatagoryId,Cost")] Books books)
+        public async Task<IActionResult> Create([Bind("Id,Name,Autor,BooksCatagoryId,Cost")] Book books)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace LiabraryMnagementS.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Autor,BooksCatagoryId,Cost")] Books books)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Autor,BooksCatagoryId,Cost")] Book books)
         {
             if (id != books.Id)
             {
