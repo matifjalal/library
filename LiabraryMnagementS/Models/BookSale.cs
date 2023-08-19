@@ -1,6 +1,6 @@
 ﻿namespace LiabraryMnagementS.Models
 {
-    public class BookSales
+    public class BookSale
     {
         public int Id { get; set; }
 

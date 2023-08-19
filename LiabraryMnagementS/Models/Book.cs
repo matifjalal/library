@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LiabraryMnagementS.Models
 {
-    public class Books
+    public class Book
     {
         [Key]
         public int Id { get; set; }
         public int BookId { get; set; }
-        public Book? Book { get; set; }
+        public Book? Books { get; set; }
         public DateTime StartDate { get; set; }
 
         public DateTime EndDate { get; set; }
@@ -28,6 +28,6 @@ namespace LiabraryMnagementS.Models
 
         public float  Currancy { get; set; }
 
-        public Currancy? Currancy { get; set; }
+        public Currancy? Currancies { get; set; }
     }
 }

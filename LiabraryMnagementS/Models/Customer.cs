@@ -5,7 +5,7 @@ namespace LiabraryMnagementS.Models
 {
     public class Customer
     {
-        [key]
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }
