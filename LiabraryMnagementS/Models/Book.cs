@@ -18,7 +18,7 @@ namespace LiabraryMnagementS.Models
         public string? IsReserved { get; set; }
         public string? IsSold { get; set; }
 
-        public int Currency { get; set; }
+        public int CurrencyId { get; set; }
         public Currency? Currency { get; set; }
 
     }
