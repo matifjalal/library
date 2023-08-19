@@ -19,7 +19,7 @@ namespace LiabraryMnagementS.Models
 
         public DbSet<BookSale> ‌‌Booksales { get; set; }
 
-        public DbSet<BookReservation> Bookreservations { get; set; }
+        public DbSet<BookReservation> BookReservations { get; set; }
 
         public DbSet <Author> Authors { get; set; }
 
